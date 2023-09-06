@@ -13,7 +13,7 @@ text = ('Вывести каждое слово с новой строки. Ст
 punctuation = string.punctuation
 txt = ''
 for i in text:
-    if i not in punctuation:
+    if i.isalpha() and i not in punctuation:
         txt += i.lower()
 print(txt)
 
